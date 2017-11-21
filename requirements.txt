@@ -1,0 +1,13 @@
+tensorflow==1.2
+scipy
+scikit-learn
+opencv-python
+h5py
+matplotlib
+Pillow
+requests
+psutil
+mysql-connector-python
+Werkzeug
+Flask
+Flask-HTTPAuth
