@@ -20,5 +20,7 @@
 ### 如何使用？
 模拟post请求，如图所示
 图中依次是插入、查询时的场景
-
+![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/insert.png)
+![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/query.png)
+![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/query1.png)
 
