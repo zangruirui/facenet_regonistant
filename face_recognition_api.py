@@ -134,7 +134,7 @@ with tf.Graph().as_default():
         images = image_array_align_data(img, image_path, pnet, rnet, onet)
 
         #判断如果如图没有检测到人脸则直接返回
-        if images.shape[0] == 1: return json.dumps({'error': "not found face"})
+        if len(images.shape) < 4: return json.dumps({'error': "not found face"})
 
         feed_dict = {images_placeholder: images, phase_train_placeholder: False}
         emb_array = sess.run(embeddings, feed_dict=feed_dict)
@@ -155,7 +155,7 @@ with tf.Graph().as_default():
                 rdict = {'uid': pic_min_uid[i],
                          'distance': pic_min_scores[i],
                          'pic_name': pic_min_names[i] }
-            result.append(rdict)
+				result.append(rdict)
         print(result)
         return json.dumps(result)
 
