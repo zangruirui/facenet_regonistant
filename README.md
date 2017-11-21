@@ -18,8 +18,11 @@
 百度网盘链接 ： 链接：http://pan.baidu.com/s/1i4YhAdB 密码：avbl
 
 ### 如何使用？
-首先在服务器上 执行 #### python   face_recognition_api.py  
+首先在服务器上 执行 ：  python   face_recognition_api.py  
 访问地址是XXXXXX:8088  这个可以配置 （代码中有注释）
+
+具体的每一步经过什么操作详见face_recognition_api.py代码中的注释
+
 模拟post请求，如图所示
 图中依次是插入、查询时的场景
 ![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/insert.png)

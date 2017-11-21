@@ -155,9 +155,13 @@ with tf.Graph().as_default():
                 rdict = {'uid': pic_min_uid[i],
                          'distance': pic_min_scores[i],
                          'pic_name': pic_min_names[i] }
-				result.append(rdict)
+                result.append(rdict)
         print(result)
-        return json.dumps(result)
+        if len(result)==0 :
+            return json.dumps({"state":"success, but not match face"})
+        else:
+            return json.dumps(result)
+
 
 
 #检测图片中的人脸  image_arr是opencv读取图片后的3维矩阵  返回图片中人脸的位置信息
