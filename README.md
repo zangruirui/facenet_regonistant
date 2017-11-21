@@ -29,3 +29,7 @@
 ![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/query.png)
 ![](https://github.com/zangruirui/facenet_regonistant/blob/master/img/query1.png)
 
+
+### 只识别文件夹下所有图片中的人脸，并保存
+face_recognition_savepic.py文件可以将images_path路径中的所有图片进行识别，将图中的人脸转换为json格式的数据输出到out_path ，并把每一个人脸设置为160X160的尺寸保证到./img/中  
+（具体文件目录可以根据自己的路径进行修改）
